@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@blog/components": ["libs/components/src/index.ts"],
+      "@blog/components/server": ["libs/components/src/server.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

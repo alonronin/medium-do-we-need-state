@@ -3,6 +3,16 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/blog",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "json-server": {
+      "executor": "nx:run-commands",
+      "options": {
+        "port": 3030,
+        "db": "./db.json5",
+        "command": "npx json-server --port {args.port} {args.db}",
+        "cwd": "{projectRoot}"
+      }
+    }
+  },
   "tags": []
 }
