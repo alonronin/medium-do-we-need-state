@@ -12,7 +12,9 @@ comes with a LSP for Vim users.
 
 ## Start the application
 
-Run `npx nx dev blog` to start the development server. Happy coding!
+First we need to Run `npx nx json-server blog` to start the json-server development server. Happy coding!
+
+Run `npx nx dev blog` to start the Next.js development server. Happy coding!
 
 ## Build for production
 
